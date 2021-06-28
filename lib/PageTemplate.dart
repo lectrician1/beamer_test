@@ -30,12 +30,14 @@ class PageTemplate extends StatelessWidget {
               ListTile(
                 title: IntrinsicWidth(child: SelectableText('Home')),
                 onTap: () {
+                  Navigator.of(context).pop();
                   Beamer.of(context).beamToNamed('/');
                 },
               ),
               ListTile(
                 title: SelectableText('Books'),
                 onTap: () {
+                  Navigator.of(context).pop();
                   Beamer.of(context).beamToNamed('/books');
                 },
               ),
